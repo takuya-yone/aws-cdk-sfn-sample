@@ -6,59 +6,23 @@ import { aws_lambda as lambda } from 'aws-cdk-lib';
 import { aws_lambda_nodejs as node_lambda } from 'aws-cdk-lib';
 import * as tasks from 'aws-cdk-lib/aws-stepfunctions-tasks';
 import * as path from 'path';
+import { LambdaConstruct } from './lambda-construct';
 
-export class AwsCdkSfnSampleStack extends cdk.Stack {
+export interface SfnConstructProps extends cdk.StackProps {
+  goodMorningFunction: lambda.IFunction;
+  goodEveningFunction: lambda.IFunction;
+  goodNightFunction: lambda.IFunction;
+}
+
+export class SfnConstruct extends Construct {
   public readonly AwsCdkSampleSfn: sfn.StateMachine;
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
+  constructor(scope: Construct, id: string, props: SfnConstructProps) {
+    super(scope, id);
 
     const duration = cdk.Duration.minutes(1);
     const wait = new sfn.Wait(this, 'Wait 1min', {
       time: sfn.WaitTime.duration(duration),
     });
-
-    const goodMorningFunction = new node_lambda.NodejsFunction(
-      this,
-      'goodMorningFunction',
-      {
-        runtime: lambda.Runtime.NODEJS_18_X,
-        entry: path.join(__dirname, '../src/lambda/good-morning/index.ts'),
-        // handler: "getItem",
-        memorySize: 256,
-        timeout: cdk.Duration.seconds(30),
-        tracing: lambda.Tracing.ACTIVE,
-        // insightsVersion: lambda.LambdaInsightsVersion.VERSION_1_0_98_0,
-        logRetention: logs.RetentionDays.THREE_MONTHS,
-      }
-    );
-    const goodEveningFunction = new node_lambda.NodejsFunction(
-      this,
-      'goodEveningFunction',
-      {
-        runtime: lambda.Runtime.NODEJS_18_X,
-        entry: path.join(__dirname, '../src/lambda/good-evening/index.ts'),
-        // handler: "getItem",
-        memorySize: 256,
-        timeout: cdk.Duration.seconds(30),
-        tracing: lambda.Tracing.ACTIVE,
-        // insightsVersion: lambda.LambdaInsightsVersion.VERSION_1_0_98_0,
-        logRetention: logs.RetentionDays.THREE_MONTHS,
-      }
-    );
-    const goodNightFunction = new node_lambda.NodejsFunction(
-      this,
-      'goodNightFunction',
-      {
-        runtime: lambda.Runtime.NODEJS_18_X,
-        entry: path.join(__dirname, '../src/lambda/good-night/index.ts'),
-        // handler: "getItem",
-        memorySize: 256,
-        timeout: cdk.Duration.seconds(30),
-        tracing: lambda.Tracing.ACTIVE,
-        // insightsVersion: lambda.LambdaInsightsVersion.VERSION_1_0_98_0,
-        logRetention: logs.RetentionDays.THREE_MONTHS,
-      }
-    );
 
     const AwsCdkSampleSfnLogGroup = new logs.LogGroup(
       this,
@@ -72,7 +36,7 @@ export class AwsCdkSfnSampleStack extends cdk.Stack {
       this,
       'goodMorningFunctionTask',
       {
-        lambdaFunction: goodMorningFunction,
+        lambdaFunction: props.goodMorningFunction,
         payload: sfn.TaskInput.fromJsonPathAt('$'),
         payloadResponseOnly: false, //未指定なら既定でfalseとなる
       }
@@ -82,7 +46,7 @@ export class AwsCdkSfnSampleStack extends cdk.Stack {
       this,
       'goodEveningFunctionTask',
       {
-        lambdaFunction: goodEveningFunction,
+        lambdaFunction: props.goodEveningFunction,
         payload: sfn.TaskInput.fromJsonPathAt('$'),
         payloadResponseOnly: false, //未指定なら既定でfalseとなる
       }
@@ -92,7 +56,7 @@ export class AwsCdkSfnSampleStack extends cdk.Stack {
       this,
       'goodNightFunctionTask',
       {
-        lambdaFunction: goodNightFunction,
+        lambdaFunction: props.goodNightFunction,
         payload: sfn.TaskInput.fromJsonPathAt('$'),
         payloadResponseOnly: false, //未指定なら既定でfalseとなる
       }
