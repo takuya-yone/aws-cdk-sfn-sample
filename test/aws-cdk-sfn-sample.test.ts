@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { AwsCdkSfnSampleStack } from '../lib/aws-cdk-sfn-sample-stack';
+import { AwsCdkSfnSampleStack } from '../lib/stack/aws-cdk-sfn-sample-stack';
 
 test('Unit Test', () => {
   const app = new cdk.App();

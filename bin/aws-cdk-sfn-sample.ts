@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { AwsCdkSfnSampleStack } from '../lib/aws-cdk-sfn-sample-stack';
+import { AwsCdkSfnSampleStack } from '../lib/stack/aws-cdk-sfn-sample-stack';
 
 const app = new cdk.App();
 new AwsCdkSfnSampleStack(app, 'AwsCdkSfnSampleStack', {
