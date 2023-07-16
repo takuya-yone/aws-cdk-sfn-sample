@@ -2,11 +2,864 @@
 
 exports[`Unit Test 1`] = `
 {
+  "Mappings": {
+    "DefaultCrNodeVersionMap": {
+      "af-south-1": {
+        "value": "nodejs16.x",
+      },
+      "ap-east-1": {
+        "value": "nodejs16.x",
+      },
+      "ap-northeast-1": {
+        "value": "nodejs16.x",
+      },
+      "ap-northeast-2": {
+        "value": "nodejs16.x",
+      },
+      "ap-northeast-3": {
+        "value": "nodejs16.x",
+      },
+      "ap-south-1": {
+        "value": "nodejs16.x",
+      },
+      "ap-south-2": {
+        "value": "nodejs16.x",
+      },
+      "ap-southeast-1": {
+        "value": "nodejs16.x",
+      },
+      "ap-southeast-2": {
+        "value": "nodejs16.x",
+      },
+      "ap-southeast-3": {
+        "value": "nodejs16.x",
+      },
+      "ca-central-1": {
+        "value": "nodejs16.x",
+      },
+      "cn-north-1": {
+        "value": "nodejs16.x",
+      },
+      "cn-northwest-1": {
+        "value": "nodejs16.x",
+      },
+      "eu-central-1": {
+        "value": "nodejs16.x",
+      },
+      "eu-central-2": {
+        "value": "nodejs16.x",
+      },
+      "eu-north-1": {
+        "value": "nodejs16.x",
+      },
+      "eu-south-1": {
+        "value": "nodejs16.x",
+      },
+      "eu-south-2": {
+        "value": "nodejs16.x",
+      },
+      "eu-west-1": {
+        "value": "nodejs16.x",
+      },
+      "eu-west-2": {
+        "value": "nodejs16.x",
+      },
+      "eu-west-3": {
+        "value": "nodejs16.x",
+      },
+      "me-central-1": {
+        "value": "nodejs16.x",
+      },
+      "me-south-1": {
+        "value": "nodejs16.x",
+      },
+      "sa-east-1": {
+        "value": "nodejs16.x",
+      },
+      "us-east-1": {
+        "value": "nodejs16.x",
+      },
+      "us-east-2": {
+        "value": "nodejs16.x",
+      },
+      "us-gov-east-1": {
+        "value": "nodejs16.x",
+      },
+      "us-gov-west-1": {
+        "value": "nodejs16.x",
+      },
+      "us-iso-east-1": {
+        "value": "nodejs14.x",
+      },
+      "us-iso-west-1": {
+        "value": "nodejs14.x",
+      },
+      "us-isob-east-1": {
+        "value": "nodejs14.x",
+      },
+      "us-west-1": {
+        "value": "nodejs16.x",
+      },
+      "us-west-2": {
+        "value": "nodejs16.x",
+      },
+    },
+    "ServiceprincipalMap": {
+      "af-south-1": {
+        "states": "states.af-south-1.amazonaws.com",
+      },
+      "ap-east-1": {
+        "states": "states.ap-east-1.amazonaws.com",
+      },
+      "ap-northeast-1": {
+        "states": "states.ap-northeast-1.amazonaws.com",
+      },
+      "ap-northeast-2": {
+        "states": "states.ap-northeast-2.amazonaws.com",
+      },
+      "ap-northeast-3": {
+        "states": "states.ap-northeast-3.amazonaws.com",
+      },
+      "ap-south-1": {
+        "states": "states.ap-south-1.amazonaws.com",
+      },
+      "ap-south-2": {
+        "states": "states.ap-south-2.amazonaws.com",
+      },
+      "ap-southeast-1": {
+        "states": "states.ap-southeast-1.amazonaws.com",
+      },
+      "ap-southeast-2": {
+        "states": "states.ap-southeast-2.amazonaws.com",
+      },
+      "ap-southeast-3": {
+        "states": "states.ap-southeast-3.amazonaws.com",
+      },
+      "ca-central-1": {
+        "states": "states.ca-central-1.amazonaws.com",
+      },
+      "cn-north-1": {
+        "states": "states.cn-north-1.amazonaws.com",
+      },
+      "cn-northwest-1": {
+        "states": "states.cn-northwest-1.amazonaws.com",
+      },
+      "eu-central-1": {
+        "states": "states.eu-central-1.amazonaws.com",
+      },
+      "eu-central-2": {
+        "states": "states.eu-central-2.amazonaws.com",
+      },
+      "eu-north-1": {
+        "states": "states.eu-north-1.amazonaws.com",
+      },
+      "eu-south-1": {
+        "states": "states.eu-south-1.amazonaws.com",
+      },
+      "eu-south-2": {
+        "states": "states.eu-south-2.amazonaws.com",
+      },
+      "eu-west-1": {
+        "states": "states.eu-west-1.amazonaws.com",
+      },
+      "eu-west-2": {
+        "states": "states.eu-west-2.amazonaws.com",
+      },
+      "eu-west-3": {
+        "states": "states.eu-west-3.amazonaws.com",
+      },
+      "me-central-1": {
+        "states": "states.me-central-1.amazonaws.com",
+      },
+      "me-south-1": {
+        "states": "states.me-south-1.amazonaws.com",
+      },
+      "sa-east-1": {
+        "states": "states.sa-east-1.amazonaws.com",
+      },
+      "us-east-1": {
+        "states": "states.us-east-1.amazonaws.com",
+      },
+      "us-east-2": {
+        "states": "states.us-east-2.amazonaws.com",
+      },
+      "us-gov-east-1": {
+        "states": "states.us-gov-east-1.amazonaws.com",
+      },
+      "us-gov-west-1": {
+        "states": "states.us-gov-west-1.amazonaws.com",
+      },
+      "us-iso-east-1": {
+        "states": "states.amazonaws.com",
+      },
+      "us-iso-west-1": {
+        "states": "states.amazonaws.com",
+      },
+      "us-isob-east-1": {
+        "states": "states.amazonaws.com",
+      },
+      "us-west-1": {
+        "states": "states.us-west-1.amazonaws.com",
+      },
+      "us-west-2": {
+        "states": "states.us-west-2.amazonaws.com",
+      },
+    },
+  },
   "Parameters": {
     "BootstrapVersion": {
       "Default": "/cdk-bootstrap/hnb659fds/version",
       "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
       "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "AwsCdkSampleSfn92C47F9D": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "AwsCdkSampleSfnRoleDefaultPolicy047B8447",
+        "AwsCdkSampleSfnRole184B19D8",
+      ],
+      "Properties": {
+        "DefinitionString": {
+          "Fn::Join": [
+            "",
+            [
+              "{"StartAt":"Wait 1min","States":{"Wait 1min":{"Type":"Wait","Seconds":60,"Next":"goodMorningFunctionTask"},"goodMorningFunctionTask":{"Next":"goodEveningFunctionTask","Retry":[{"ErrorEquals":["Lambda.ServiceException","Lambda.AWSLambdaException","Lambda.SdkClientException"],"IntervalSeconds":2,"MaxAttempts":6,"BackoffRate":2}],"Type":"Task","Resource":"arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":states:::lambda:invoke","Parameters":{"FunctionName":"",
+              {
+                "Fn::GetAtt": [
+                  "goodMorningFunction3E679E3C",
+                  "Arn",
+                ],
+              },
+              "","Payload.$":"$"}},"goodEveningFunctionTask":{"Next":"goodNightFunctionTask","Retry":[{"ErrorEquals":["Lambda.ServiceException","Lambda.AWSLambdaException","Lambda.SdkClientException"],"IntervalSeconds":2,"MaxAttempts":6,"BackoffRate":2}],"Type":"Task","Resource":"arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":states:::lambda:invoke","Parameters":{"FunctionName":"",
+              {
+                "Fn::GetAtt": [
+                  "goodEveningFunction291D0983",
+                  "Arn",
+                ],
+              },
+              "","Payload.$":"$"}},"goodNightFunctionTask":{"End":true,"Retry":[{"ErrorEquals":["Lambda.ServiceException","Lambda.AWSLambdaException","Lambda.SdkClientException"],"IntervalSeconds":2,"MaxAttempts":6,"BackoffRate":2}],"Type":"Task","Resource":"arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":states:::lambda:invoke","Parameters":{"FunctionName":"",
+              {
+                "Fn::GetAtt": [
+                  "goodNightFunction37ECDED7",
+                  "Arn",
+                ],
+              },
+              "","Payload.$":"$"}}}}",
+            ],
+          ],
+        },
+        "LoggingConfiguration": {
+          "Destinations": [
+            {
+              "CloudWatchLogsLogGroup": {
+                "LogGroupArn": {
+                  "Fn::GetAtt": [
+                    "AwsCdkSampleSfnLogGroupB7FD97CA",
+                    "Arn",
+                  ],
+                },
+              },
+            },
+          ],
+          "Level": "ALL",
+        },
+        "RoleArn": {
+          "Fn::GetAtt": [
+            "AwsCdkSampleSfnRole184B19D8",
+            "Arn",
+          ],
+        },
+        "StateMachineName": "AwsCdkSampleSfn",
+        "TracingConfiguration": {
+          "Enabled": true,
+        },
+      },
+      "Type": "AWS::StepFunctions::StateMachine",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "AwsCdkSampleSfnLogGroupB7FD97CA": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "RetentionInDays": 365,
+      },
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "AwsCdkSampleSfnRole184B19D8": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": {
+                  "Fn::FindInMap": [
+                    "ServiceprincipalMap",
+                    {
+                      "Ref": "AWS::Region",
+                    },
+                    "states",
+                  ],
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "AwsCdkSampleSfnRoleDefaultPolicy047B8447": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:CreateLogDelivery",
+                "logs:GetLogDelivery",
+                "logs:UpdateLogDelivery",
+                "logs:DeleteLogDelivery",
+                "logs:ListLogDeliveries",
+                "logs:PutResourcePolicy",
+                "logs:DescribeResourcePolicies",
+                "logs:DescribeLogGroups",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+                "xray:GetSamplingRules",
+                "xray:GetSamplingTargets",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "goodMorningFunction3E679E3C",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "goodMorningFunction3E679E3C",
+                          "Arn",
+                        ],
+                      },
+                      ":*",
+                    ],
+                  ],
+                },
+              ],
+            },
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "goodEveningFunction291D0983",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "goodEveningFunction291D0983",
+                          "Arn",
+                        ],
+                      },
+                      ":*",
+                    ],
+                  ],
+                },
+              ],
+            },
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "goodNightFunction37ECDED7",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "goodNightFunction37ECDED7",
+                          "Arn",
+                        ],
+                      },
+                      ":*",
+                    ],
+                  ],
+                },
+              ],
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "AwsCdkSampleSfnRoleDefaultPolicy047B8447",
+        "Roles": [
+          {
+            "Ref": "AwsCdkSampleSfnRole184B19D8",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A": {
+      "DependsOn": [
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "5fa1330271b8967d9254ba2d4a07144f8acefe8b77e6d6bba38261373a50d5f8.zip",
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "Arn",
+          ],
+        },
+        "Runtime": {
+          "Fn::FindInMap": [
+            "DefaultCrNodeVersionMap",
+            {
+              "Ref": "AWS::Region",
+            },
+            "value",
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:PutRetentionPolicy",
+                "logs:DeleteRetentionPolicy",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+        "Roles": [
+          {
+            "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "goodEveningFunction291D0983": {
+      "DependsOn": [
+        "goodEveningFunctionServiceRoleDefaultPolicyC27DE889",
+        "goodEveningFunctionServiceRoleB02F01BC",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "e824cb0775e0b616defac2c6a8b0e27b569e2f963871dbb47f92cdc6d30c91c8.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 256,
+        "Role": {
+          "Fn::GetAtt": [
+            "goodEveningFunctionServiceRoleB02F01BC",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 30,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "goodEveningFunctionLogRetention4BBC2A24": {
+      "Properties": {
+        "LogGroupName": {
+          "Fn::Join": [
+            "",
+            [
+              "/aws/lambda/",
+              {
+                "Ref": "goodEveningFunction291D0983",
+              },
+            ],
+          ],
+        },
+        "RetentionInDays": 90,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::LogRetention",
+    },
+    "goodEveningFunctionServiceRoleB02F01BC": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "goodEveningFunctionServiceRoleDefaultPolicyC27DE889": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "goodEveningFunctionServiceRoleDefaultPolicyC27DE889",
+        "Roles": [
+          {
+            "Ref": "goodEveningFunctionServiceRoleB02F01BC",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "goodMorningFunction3E679E3C": {
+      "DependsOn": [
+        "goodMorningFunctionServiceRoleDefaultPolicy3FE6CEFC",
+        "goodMorningFunctionServiceRole80B2EC6E",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "c7dc3d491f2f79cba2c3b6d582dee29694700a0c6fc391f8a39bc72806c4fe0e.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 256,
+        "Role": {
+          "Fn::GetAtt": [
+            "goodMorningFunctionServiceRole80B2EC6E",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 30,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "goodMorningFunctionLogRetentionBB45279A": {
+      "Properties": {
+        "LogGroupName": {
+          "Fn::Join": [
+            "",
+            [
+              "/aws/lambda/",
+              {
+                "Ref": "goodMorningFunction3E679E3C",
+              },
+            ],
+          ],
+        },
+        "RetentionInDays": 90,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::LogRetention",
+    },
+    "goodMorningFunctionServiceRole80B2EC6E": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "goodMorningFunctionServiceRoleDefaultPolicy3FE6CEFC": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "goodMorningFunctionServiceRoleDefaultPolicy3FE6CEFC",
+        "Roles": [
+          {
+            "Ref": "goodMorningFunctionServiceRole80B2EC6E",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "goodNightFunction37ECDED7": {
+      "DependsOn": [
+        "goodNightFunctionServiceRoleDefaultPolicy8895BDE0",
+        "goodNightFunctionServiceRole147F772C",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "d1568bbfc4c6683856088cb45c10995782d3342ec23875f25008d272eb0b8e32.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "MemorySize": 256,
+        "Role": {
+          "Fn::GetAtt": [
+            "goodNightFunctionServiceRole147F772C",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 30,
+        "TracingConfig": {
+          "Mode": "Active",
+        },
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "goodNightFunctionLogRetention265F33B6": {
+      "Properties": {
+        "LogGroupName": {
+          "Fn::Join": [
+            "",
+            [
+              "/aws/lambda/",
+              {
+                "Ref": "goodNightFunction37ECDED7",
+              },
+            ],
+          ],
+        },
+        "RetentionInDays": 90,
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::LogRetention",
+    },
+    "goodNightFunctionServiceRole147F772C": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "goodNightFunctionServiceRoleDefaultPolicy8895BDE0": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "goodNightFunctionServiceRoleDefaultPolicy8895BDE0",
+        "Roles": [
+          {
+            "Ref": "goodNightFunctionServiceRole147F772C",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
     },
   },
   "Rules": {
